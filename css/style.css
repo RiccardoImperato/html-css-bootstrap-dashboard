@@ -10,6 +10,16 @@ header {
     height: 4.375rem;
 }
 
+#topbar img {
+    width: 100%;
+    min-width: 2.5rem;
+}
+
+#topbar img:last-child {
+    width: 100%;
+    min-width: 6.25rem;
+}
+
 /*/ Header */
 
 /* Main */
@@ -23,6 +33,8 @@ nav {
 }
 
 #sidebar {
+    max-width: 9.375rem;
+    min-width: 4.375rem;
     background-color: #051e34;
     background-image: url(../img/sidebar-bg.png);
 }

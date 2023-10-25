@@ -22,16 +22,28 @@
 
 <body>
     <!-- Header -->
-    <header class="container-fluid bg-light py-2 text-center position-sticky start-0 top-0 end-0">
-        <div class="row">
-            <div class="col-2">
-                logo
+    <header class="container-fluid sticky-top bg-white py-3" id="topbar">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-1">
+                <img src="./img/mobile-logo.png" alt="Logo-small" class="d-block d-lg-none">
+                <img src="./img/logo.svg" alt="Logo" class="d-none d-lg-block">
             </div>
-            <div class="col-8">
-                search
+            <div class="col-10">
+                <div class="input-group">
+                    <button class="input-group-text" id="inputGroup-sizing-default">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <input type="text" class="form-control border-start-0 bg-body-tertiary"
+                        aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
             </div>
-            <div class="col-2">
-                menu
+            <div class="col-1">
+                <div class="d-flex justify-content-around">
+                    <i class="fa-solid fa-list-ul d-none d-lg-block text-secondary"></i>
+                    <i class="fa-solid fa-circle-question d-none d-lg-block text-secondary"></i>
+                    <i class="fa-solid fa-ellipsis-vertical d-none d-lg-block text-secondary"></i>
+                    <i class="fa-solid fa-bell text-warning"></i>
+                </div>
             </div>
         </div>
     </header>
@@ -60,10 +72,7 @@
                 </div>
             </div>
             <div class="col">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eius ratione cupiditate, neque quas
-                quaerat
-                repudiandae aperiam aliquam voluptates! Exercitationem nisi impedit eius perferendis aperiam ea dolorum
-                facilis architecto consequuntur.
+
             </div>
         </nav>
 

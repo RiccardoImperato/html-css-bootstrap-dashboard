@@ -23,12 +23,12 @@
 <body>
     <!-- Header -->
     <header class="container-fluid sticky-top bg-white py-3" id="topbar">
-        <div class="row align-items-center justify-content-between">
+        <div class="row align-items-center justify-content-between gx-4">
             <div class="col-1">
                 <img src="./img/mobile-logo.png" alt="Logo-small" class="d-block d-lg-none">
                 <img src="./img/logo.svg" alt="Logo" class="d-none d-lg-block">
             </div>
-            <div class="col-10">
+            <div class="col">
                 <div class="input-group">
                     <button class="input-group-text" id="inputGroup-sizing-default">
                         <i class="fa-solid fa-magnifying-glass"></i>
@@ -51,7 +51,7 @@
     <!-- Main -->
     <main>
         <nav class="row m-0">
-            <div class="col-1 d-flex flex-column justify-content-between text-white py-4" id="sidebar">
+            <div class="col-1 d-flex flex-column justify-content-between text-white py-3" id="sidebar">
                 <div class="d-flex flex-column">
                     <div class="my-2 d-flex align-items-center justify-content-center">
                         <i class="fa-solid fa-house"></i>
@@ -72,7 +72,44 @@
                 </div>
             </div>
             <div class="col">
-
+                <div class="row flex-column bg-primary text-white py-4 flex-sm-row">
+                    <div class="col-12 col-lg-6">
+                        <div class="mb-2">
+                            <span class="h2">Boolean</span>
+                            <span class="badge rounded-pill text-bg-dark" style="--bs-bg-opacity: .5;">
+                                Piano blaze
+                            </span>
+                        </div>
+                        <div class="mb-2">
+                            <span class="badge rounded-pill text-bg-dark" style="--bs-bg-opacity: .5;">3 app</span>
+                            <span>>></span>
+                            <span class="badge rounded-pill text-bg-dark d-inline-block d-lg-none"
+                                style="--bs-bg-opacity: .5;">+</span>
+                            <span class="badge rounded-pill text-bg-dark d-none d-lg-inline-block"
+                                style="--bs-bg-opacity: .5;">
+                                Boolean mobile app
+                            </span>
+                            <span class="badge rounded-pill text-bg-dark d-none d-lg-inline-block"
+                                style="--bs-bg-opacity: .5;">
+                                Boolean web app
+                            </span>
+                            <span class="badge rounded-pill text-bg-dark d-none d-lg-inline-block"
+                                style="--bs-bg-opacity: .5;">
+                                Boolean blog app
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="mb-2">
+                            Studenti online negli ultimi 30 minuti
+                        </div>
+                        <h2>125</h2>
+                    </div>
+                    <div class="col-12 col-lg-2 mb-2 order-first order-lg-last">
+                        <span>Nuovo Studente</span>
+                        <button type="button" class="btn btn-outline-light ms-3">+</button>
+                    </div>
+                </div>
             </div>
         </nav>
 

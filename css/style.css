@@ -3,3 +3,28 @@
 @import url(../css/_partials/typo.css);
 
 /*/ Import */
+
+/* Header */
+
+header {
+    height: 4.375rem;
+}
+
+/*/ Header */
+
+/* Main */
+
+main {
+    height: calc(100vh - 4.375rem);
+}
+
+nav {
+    height: 100%;
+}
+
+#sidebar {
+    background-color: #051e34;
+    background-image: url(../img/sidebar-bg.png);
+}
+
+/*/ Main */

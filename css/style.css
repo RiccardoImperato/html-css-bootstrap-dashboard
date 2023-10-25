@@ -46,10 +46,38 @@ header {
     width: 100%;
 }
 
+
+.table img {
+    height: 1.875rem;
+    width: 1.875rem;
+}
+
+td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.date,
+.roi {
+    display: none;
+}
+
+
 /*/ Main */
 
 
 /* Media Queries */
+
+
+@media screen and (min-width:576px) {
+
+    .date,
+    .roi {
+        display: table-cell;
+    }
+
+}
+
 
 @media screen and (min-width:992px) {
 

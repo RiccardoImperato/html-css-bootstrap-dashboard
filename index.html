@@ -22,7 +22,7 @@
 
 <body>
     <!-- Header -->
-    <header class="container-fluid sticky-top bg-white py-3" id="topbar">
+    <header class="container-fluid fixed-top bg-white py-3" id="topbar">
         <div class="row align-items-center justify-content-between gx-4">
             <!-- Logos -->
             <div class="col-1">
@@ -58,7 +58,8 @@
     <main class="bg-light">
         <div class="row m-0">
             <!-- Sidebar -->
-            <nav class="col-1 d-flex flex-column justify-content-between text-white py-3" id="sidebar">
+            <nav class="col-1 pb-3 d-flex flex-column justify-content-between text-white position-sticky top-0 bottom-0 star-0"
+                id="sidebar">
                 <div class="d-flex flex-column">
                     <div class="my-2 d-flex align-items-center justify-content-center">
                         <i class="fa-solid fa-house"></i>
@@ -82,7 +83,7 @@
             <!-- Big column -->
             <div class="col">
                 <!-- Main header -->
-                <div class="row flex-column bg-primary text-white py-4 flex-sm-row">
+                <div class="row flex-column bg-primary text-white pb-4 flex-sm-row" id="main-header">
                     <div class="col-12 col-lg-6">
                         <div class="mb-2">
                             <span class="h2">Boolean</span>

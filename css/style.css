@@ -24,15 +24,22 @@ header {
 /* Main */
 
 #sidebar {
+    height: 100vh;
     max-width: 9.375rem;
     min-width: 4.375rem;
+    z-index: 1;
     background-color: #051e34;
     background-image: url(../img/sidebar-bg.png);
     background-size: cover;
+    padding-top: 5.375rem;
 }
 
 .stats img {
     width: 100%;
+}
+
+#main-header {
+    padding-top: 5.875rem;
 }
 
 #offcanvas {

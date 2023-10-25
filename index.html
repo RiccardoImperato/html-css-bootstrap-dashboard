@@ -24,10 +24,13 @@
     <!-- Header -->
     <header class="container-fluid sticky-top bg-white py-3" id="topbar">
         <div class="row align-items-center justify-content-between gx-4">
+            <!-- Logos -->
             <div class="col-1">
                 <img src="./img/mobile-logo.png" alt="Logo-small" class="d-block d-lg-none">
                 <img src="./img/logo.svg" alt="Logo" class="d-none d-lg-block">
             </div>
+            <!-- /Logos -->
+            <!-- Form -->
             <div class="col">
                 <div class="input-group">
                     <button class="input-group-text" id="inputGroup-sizing-default">
@@ -37,21 +40,25 @@
                         aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                 </div>
             </div>
+            <!-- /Form -->
+            <!-- Top Menu -->
             <div class="col-1">
                 <div class="d-flex justify-content-around">
-                    <i class="fa-solid fa-list-ul d-none d-lg-block text-secondary"></i>
-                    <i class="fa-solid fa-circle-question d-none d-lg-block text-secondary"></i>
-                    <i class="fa-solid fa-ellipsis-vertical d-none d-lg-block text-secondary"></i>
+                    <i class="fa-solid fa-list-ul d-none d-lg-block text-dark"></i>
+                    <i class="fa-solid fa-circle-question d-none d-lg-block text-dark"></i>
+                    <i class="fa-solid fa-ellipsis-vertical d-none d-lg-block text-dark"></i>
                     <i class="fa-solid fa-bell text-warning"></i>
                 </div>
             </div>
+            <!-- /Top Menu -->
         </div>
     </header>
     <!-- /Header -->
     <!-- Main -->
-    <main>
-        <nav class="row m-0">
-            <div class="col-1 d-flex flex-column justify-content-between text-white py-3" id="sidebar">
+    <main class="bg-light">
+        <div class="row m-0">
+            <!-- Sidebar -->
+            <nav class="col-1 d-flex flex-column justify-content-between text-white py-3" id="sidebar">
                 <div class="d-flex flex-column">
                     <div class="my-2 d-flex align-items-center justify-content-center">
                         <i class="fa-solid fa-house"></i>
@@ -70,8 +77,11 @@
                     <i class="fa-solid fa-gear"></i>
                     <div class="d-none d-lg-block ms-2">Admin</div>
                 </div>
-            </div>
+            </nav>
+            <!-- /Sidebar -->
+            <!-- Big column -->
             <div class="col">
+                <!-- Main header -->
                 <div class="row flex-column bg-primary text-white py-4 flex-sm-row">
                     <div class="col-12 col-lg-6">
                         <div class="mb-2">
@@ -82,7 +92,7 @@
                         </div>
                         <div class="mb-2">
                             <span class="badge rounded-pill text-bg-dark" style="--bs-bg-opacity: .5;">3 app</span>
-                            <span>>></span>
+                            <span class="align-middle"><i class="fa-solid fa-angles-right"></i></span>
                             <span class="badge rounded-pill text-bg-dark d-inline-block d-lg-none"
                                 style="--bs-bg-opacity: .5;">+</span>
                             <span class="badge rounded-pill text-bg-dark d-none d-lg-inline-block"
@@ -106,13 +116,255 @@
                         <h2>125</h2>
                     </div>
                     <div class="col-12 col-lg-2 mb-2 order-first order-lg-last">
-                        <span>Nuovo Studente</span>
-                        <button type="button" class="btn btn-outline-light ms-3">+</button>
+                        <span class="me-3">Nuovo Studente</span>
+                        <button class="btn btn-primary border-white" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvas" aria-controls="offcanvas">
+                            +
+                        </button>
+                        <!-- Offcanvas -->
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas"
+                            aria-labelledby="offcanvasLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasLabel">Offcanvas</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                Content for the offcanvas goes here. You can place just about any Bootstrap component or
+                                custom elements
+                                here.
+                            </div>
+                        </div>
+                        <!-- /Offcanvas -->
                     </div>
                 </div>
+                <!-- /Main header -->
+                <!-- Content -->
+                <div class="d-flex flex-column flex-lg-row">
+                    <!-- Left Content -->
+                    <div class="row flex-column gy-3 my-3 mx-3" id="left">
+                        <!-- Table -->
+                        <div class="col p-0 m-0 card">
+                            <div>
+                                <div class="card-header">
+                                    Featured
+                                </div>
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- /Table -->
+                        <!-- Accordion -->
+                        <div class="col p-0">
+                            <div class="card card-header">
+                                Featured
+                            </div>
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item rounded-0">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button rounded-0" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Accordion Item #1
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the first item's accordion body.</strong> It is shown by
+                                            default, until the collapse plugin adds the appropriate classes that we use
+                                            to
+                                            style each element. These classes control the overall appearance, as well as
+                                            the
+                                            showing and hiding via CSS transitions. You can modify any of this with
+                                            custom
+                                            CSS or overriding our default variables. It's also worth noting that just
+                                            about
+                                            any HTML can go within the <code>.accordion-body</code>, though the
+                                            transition
+                                            does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            Accordion Item #2
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the second item's accordion body.</strong> It is hidden by
+                                            default, until the collapse plugin adds the appropriate classes that we use
+                                            to
+                                            style each element. These classes control the overall appearance, as well as
+                                            the
+                                            showing and hiding via CSS transitions. You can modify any of this with
+                                            custom
+                                            CSS or overriding our default variables. It's also worth noting that just
+                                            about
+                                            any HTML can go within the <code>.accordion-body</code>, though the
+                                            transition
+                                            does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Accordion Item #3
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the third item's accordion body.</strong> It is hidden by
+                                            default, until the collapse plugin adds the appropriate classes that we use
+                                            to
+                                            style each element. These classes control the overall appearance, as well as
+                                            the
+                                            showing and hiding via CSS transitions. You can modify any of this with
+                                            custom
+                                            CSS or overriding our default variables. It's also worth noting that just
+                                            about
+                                            any HTML can go within the <code>.accordion-body</code>, though the
+                                            transition
+                                            does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Accordion -->
+                    </div>
+                    <!-- /Left Content -->
+                    <!-- Right Content -->
+                    <div class="row flex-column gy-3 my-3 mx-3" id="right">
+                        <!-- Checkbox -->
+                        <div class="col p-0 m-0 card">
+                            <div>
+                                <div class="card-header">
+                                    Featured
+                                </div>
+                            </div>
+                            <div class="m-4">
+                                <div class="border rounded-top p-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input ps-2" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Default checkbox
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="border p-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input ps-2" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Default checkbox
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="border rounded-bottom p-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input ps-2" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Default checkbox
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Checkbox -->
+                        <!-- Stats -->
+                        <div class="col p-4 card">
+                            <div class="card stats">
+                                <img src="./img/stats.jpeg" alt="">
+                                <div class="p-3">
+                                    <h2>Utenti attivi</h2>
+                                    <span>Lista degli utenti attivi nel ultimo mese</span>
+                                </div>
+                                <div class="border-top p-3">Gennaio: 1200</div>
+                                <div class="border-top p-3">Febbraio: 800</div>
+                                <div class="border-top p-3">Marzo: 1500</div>
+                                <div class="border-top p-4">
+                                    <a href="#">Visualizza report approfondito</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Stats -->
+                    </div>
+                    <!-- Right Content -->
+                </div>
+                <!-- /Content -->
             </div>
-        </nav>
-
+            <!-- /Big column -->
+        </div>
     </main>
     <!-- /Main -->
     <!-- Footer -->

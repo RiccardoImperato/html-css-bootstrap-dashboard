@@ -23,19 +23,42 @@ header {
 
 /* Main */
 
-main {
-    height: calc(100vh - 4.375rem);
-}
-
-nav {
-    height: 100%;
-}
-
 #sidebar {
     max-width: 9.375rem;
     min-width: 4.375rem;
     background-color: #051e34;
     background-image: url(../img/sidebar-bg.png);
+    background-size: cover;
+}
+
+.stats img {
+    width: 100%;
+}
+
+#offcanvas {
+    width: 100%;
 }
 
 /*/ Main */
+
+
+/* Media Queries */
+
+@media screen and (min-width:992px) {
+
+    #left {
+        width: 60%;
+    }
+
+    #right {
+        width: 40%;
+    }
+
+    #offcanvas {
+        width: 40%;
+    }
+
+
+}
+
+/*/ Media Queries */

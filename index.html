@@ -22,8 +22,8 @@
 
 <body>
     <!-- Header -->
-    <header class="container-fluid fixed-top bg-white py-3" id="topbar">
-        <div class="row align-items-center justify-content-between gx-4">
+    <header class="container-fluid fixed-top bg-light py-3" id="topbar">
+        <div class="row align-items-center justify-content-between gx-4 bg-white">
             <!-- Logos -->
             <div class="col-1" id="logo">
                 <img src="./img/mobile-logo.png" alt="Logo-small" class="d-block d-lg-none">
@@ -33,21 +33,30 @@
             <!-- Searchbar -->
             <div class="col">
                 <div class="input-group">
-                    <button class="input-group-text" id="inputGroup-sizing-default">
+                    <button class="input-group-text bg-body-secondary" id="inputGroup-sizing-default">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
-                    <input type="text" class="form-control border-start-0 bg-body-tertiary"
-                        aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    <input type="text" class="form-control ps-0 border-start-0 bg-body-secondary"
+                        placeholder="Prova a cercare: Lezioni di Laravel">
                 </div>
             </div>
             <!-- /Searchbar -->
             <!-- Top Menu -->
             <div class="col-1" id="i-menu">
-                <div class="d-flex justify-content-around">
+                <div class="d-flex justify-content-around align-items-center">
                     <i class="fa-solid fa-list-ul d-none d-lg-block text-dark"></i>
                     <i class="fa-solid fa-circle-question d-none d-lg-block text-dark"></i>
                     <i class="fa-solid fa-ellipsis-vertical d-none d-lg-block text-dark"></i>
-                    <i class="fa-solid fa-bell text-warning"></i>
+                    <div class="dropdown">
+                        <a class="dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-bell text-warning"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <!-- /Top Menu -->

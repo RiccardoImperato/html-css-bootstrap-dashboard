@@ -1,8 +1,15 @@
-/* Import */
+/* Common */
 
-@import url(../css/_partials/typo.css);
+body {
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
 
-/*/ Import */
+main {
+    height: calc(100vh - 4.375rem);
+}
+
+/* Common */
 
 /* Header */
 
@@ -11,7 +18,7 @@ header {
 }
 
 #topbar img {
-    width: 2.5rem;
+    width: 3.125rem;
 }
 
 #topbar img:last-child {
@@ -31,7 +38,13 @@ header {
     background-color: #051e34;
     background-image: url(../img/sidebar-bg.png);
     background-size: cover;
+    background-position: center;
     padding-top: 5.375rem;
+}
+
+#logo,
+#i-menu {
+    min-width: 4.375rem;
 }
 
 .stats img {
@@ -45,7 +58,6 @@ header {
 #offcanvas {
     width: 100%;
 }
-
 
 .table img {
     height: 1.875rem;
@@ -62,12 +74,10 @@ td {
     display: none;
 }
 
-
 /*/ Main */
 
 
 /* Media Queries */
-
 
 @media screen and (min-width:576px) {
 
@@ -77,7 +87,6 @@ td {
     }
 
 }
-
 
 @media screen and (min-width:992px) {
 
@@ -92,7 +101,6 @@ td {
     #offcanvas {
         width: 40%;
     }
-
 
 }
 

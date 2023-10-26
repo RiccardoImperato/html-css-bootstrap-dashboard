@@ -4,6 +4,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+#sidebar a {
+    all: unset;
+    cursor: pointer;
+}
+
 /* Common */
 
 /* Header */
@@ -35,6 +40,10 @@ header {
     background-size: cover;
     background-position: center;
     padding-top: 5.375rem;
+}
+
+#sidebar li:hover {
+    background-color: #e5e5e5;
 }
 
 #logo,

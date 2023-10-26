@@ -67,26 +67,33 @@
     <main class="bg-light">
         <div class="row m-0">
             <!-- Sidebar -->
-            <nav class="col-1 pb-3 d-flex flex-column justify-content-between text-white position-sticky top-0 bottom-0 star-0"
-                id="sidebar">
-                <div class="d-flex flex-column">
-                    <div class="my-2 d-flex align-items-center justify-content-center">
-                        <i class="fa-solid fa-house"></i>
-                        <div class="d-none d-lg-block ms-2">Home</div>
-                    </div>
-                    <div class="my-2 d-flex align-items-center justify-content-center">
-                        <i class="fa-solid fa-chart-simple pe-1"></i>
-                        <div class="d-none d-lg-block ms-2">Stats</div>
-                    </div>
-                    <div class="my-2 d-flex align-items-center justify-content-center">
-                        <i class="fa-solid fa-signal"></i>
-                        <div class="d-none d-lg-block ms-2">Signals</div>
-                    </div>
-                </div>
-                <div class="my-2 d-flex align-items-center justify-content-center">
-                    <i class="fa-solid fa-gear"></i>
-                    <div class="d-none d-lg-block ms-2">Admin</div>
-                </div>
+            <nav class="col-1 pb-3 d-flex flex-column text-white position-sticky top-0 bottom-0 star-0" id="sidebar">
+                <ul class="d-flex flex-column m-0 p-0 h-100">
+                    <li class="py-2 d-flex align-items-center justify-content-center">
+                        <a href="#">
+                            <i class="fa-solid fa-house"></i>
+                            <span class="d-none d-lg-inline ms-2">Home</span>
+                        </a>
+                    </li>
+                    <li class="py-2 d-flex align-items-center justify-content-center">
+                        <a href="#">
+                            <i class="fa-solid fa-chart-simple pe-1"></i>
+                            <span class="d-none d-lg-inline ms-2">Stats</span>
+                        </a>
+                    </li>
+                    <li class="py-2 d-flex align-items-center justify-content-center">
+                        <a href="#">
+                            <i class="fa-solid fa-signal"></i>
+                            <span class="d-none d-lg-inline ms-2">Signals</span>
+                        </a>
+                    </li>
+                    <li class="py-2 d-flex align-items-center justify-content-center mt-auto">
+                        <a href="#">
+                            <i class="fa-solid fa-gear"></i>
+                            <span class="d-none d-lg-inline ms-2">Admin</span>
+                        </a>
+                    </li>
+                </ul>
             </nav>
             <!-- /Sidebar -->
             <!-- Big column -->
@@ -323,7 +330,7 @@
                                     <div class="card card-header">
                                         <h3 class="m-0">F.A.Q.</h3>
                                     </div>
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    <button class="accordion-button rounded-0" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                         Come aggiungere un nuovo studente?
                                     </button>

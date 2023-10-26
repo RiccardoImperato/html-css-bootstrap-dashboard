@@ -1,12 +1,7 @@
 /* Common */
 
 body {
-    height: 100vh;
     font-family: 'Roboto', sans-serif;
-}
-
-main {
-    height: calc(100vh - 4.375rem);
 }
 
 /* Common */
@@ -91,11 +86,11 @@ td {
 @media screen and (min-width:992px) {
 
     #left {
-        width: 60%;
+        width: 70%;
     }
 
     #right {
-        width: 40%;
+        width: 30%;
     }
 
     #offcanvas {

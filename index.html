@@ -139,12 +139,12 @@
                             +
                         </button>
                         <!-- Offcanvas -->
-                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas"
-                            aria-labelledby="offcanvasLabel">
-                            <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasLabel">Inserisci nuovo studente</h5>
-                            </div>
-                            <form action="#">
+                        <form action="#" method="get">
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas"
+                                aria-labelledby="offcanvasLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasLabel">Inserisci nuovo studente</h5>
+                                </div>
                                 <div class="offcanvas-body">
                                     <div class="row">
                                         <div class="col-6">
@@ -156,8 +156,7 @@
                                                 <label for="basic-url" class="form-label">Email</label>
                                                 <div class="input-group">
                                                     <span class="input-group-text" id="basic-addon3">@</span>
-                                                    <input type="text" class="form-control" id="basic-url"
-                                                        aria-describedby="basic-addon3 basic-addon4">
+                                                    <input type="text" class="form-control" id="basic-url">
                                                 </div>
                                             </div>
                                         </div>
@@ -206,7 +205,7 @@
                                             <div class="mb-3">
                                                 <label for="photo" class="form-label">Foto</label>
                                                 <div class="input-group">
-                                                    <span class="input-group-text" id="basic-addon3">Scegli file</span>
+                                                    <span class="input-group-text" id="basic-addon">Scegli file</span>
                                                     <input type="text" class="form-control" id="photo"
                                                         placeholder="Nessun file selezionato">
                                                 </div>
@@ -218,13 +217,13 @@
                                                     </label>
                                                 </div>
                                                 <button type="button" class="btn btn-primary">Salva</button>
-                                                <button type="rest" class="btn btn-warning">Svuota</button>
+                                                <button type="reset" class="btn btn-warning">Svuota</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </form>
-                        </div>
+                            </div>
+                        </form>
                         <!-- /Offcanvas -->
                     </div>
                 </div>
@@ -407,7 +406,6 @@
                                         data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                         Come aggiungere un nuovo studente?
                                     </button>
-                                    </h2>
                                     <div id="collapseOne" class="accordion-collapse collapse show"
                                         data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
